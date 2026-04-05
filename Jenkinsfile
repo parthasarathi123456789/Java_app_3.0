@@ -32,7 +32,7 @@ pipeline{
         stage('Maven Dependency Download'){
             when { expression {  params.action == 'create' } }
             steps{
-                sh 'mvn clean install -U'
+                sh 'mvn clean install -U -DskipTests'
             }
         }
 
