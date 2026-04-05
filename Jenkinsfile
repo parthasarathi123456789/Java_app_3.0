@@ -4,9 +4,10 @@ pipeline{
 
     agent any
 
-    tools {
-        maven 'maven3'   // make sure this exists in Jenkins
-    }
+  tools {
+    maven 'maven3'
+    jdk 'jdk11'
+}
 
     parameters{
 
