@@ -36,6 +36,12 @@ pipeline{
             }
         }
 
+        stage('Check Java Version') {
+    steps {
+        sh 'java -version'
+    }
+}
+
         stage('Unit Test maven'){
             when { expression {  params.action == 'create' } }
             steps{
