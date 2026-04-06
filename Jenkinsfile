@@ -2,8 +2,12 @@
 
 pipeline{
 
-    agent any
-    //agent { label 'Demo' }
+    agent {
+    docker {
+        image 'maven:3.9.6-eclipse-temurin-11'
+        args '-v /var/run/docker.sock:/var/run/docker.sock'
+    }
+}
 
     parameters{
 
