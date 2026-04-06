@@ -78,3 +78,10 @@
 
 
 </project>
+<properties>
+    <maven.compiler.release>17</maven.compiler.release>
+</properties>
+<plugin>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.10.1</version>
+</plugin>
